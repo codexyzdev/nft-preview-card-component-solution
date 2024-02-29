@@ -1,0 +1,63 @@
+<section class="bg-cardBG rounded-md bg-slate-400 p-6">
+	<a href="#" class="equilibrium relative">
+		<img
+			class="aspect-square rounded-md"
+			src="/images/image-equilibrium.jpg"
+			alt="image-equilibrium.jpg"
+		/>
+	</a>
+	<a
+		href="#"
+		class="hover:text-Cyan my-4 block text-2xl transition-colors duration-300 ease-in-out"
+	>
+		Equilibrium #3429
+	</a>
+	<p class="text-SoftBlue text-[18px] leading-6">
+		Our Equilibrium collection promotes balance and calm.
+	</p>
+	<p class="my-4 flex justify-between">
+		<span class="text-Cyan flex gap-2"
+			><img class="object-contain" src="/images/icon-ethereum.svg" alt="icon-ethereum.svg" />
+			0.041 ETH
+		</span>
+		<span class="text-SoftBlue flex gap-2">
+			<img class="object-contain" src="/images/icon-clock.svg" alt="icon-clock.svg" /> 3 days left
+		</span>
+	</p>
+	<hr class="text-line my-4" />
+	<div class="flex items-center gap-4">
+		<img
+			src="/images/image-avatar.png"
+			alt="image-avatar.png"
+			class="size-8 rounded-full border-2"
+		/>
+		<p>
+			<span class="text-SoftBlue">Creation of</span>
+			<a href="#" class="hover:text-Cyan transition-colors duration-300 ease-in-out">Jules Wyvern</a
+			>
+		</p>
+	</div>
+</section>
+<style>
+	.equilibrium::before {
+		content: url("/images/icon-view.svg");
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 6px;
+		z-index: 5;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		opacity: 0;
+		background-color: hsla(178, 100%, 50%, 0.7);
+		width: 100%;
+		height: 100%;
+		transition: opacity 0.3s;
+	}
+	.equilibrium:hover::before {
+		cursor: pointer;
+		opacity: 1;
+	}
+</style>
